@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gylka Simple Switcher</string>
+    <string name="flashlight_switcher_label">Flashlight Switcher</string>
+    <string name="wifi_switcher_label">Wi-Fi Swither</string>
+    <string name="bluetooth_switcher_label">Bluetooth Swither</string>
+</resources>
