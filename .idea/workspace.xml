@@ -22,14 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e669c73-1783-4ae9-aa3c-8f225b7a59c4" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Alek\IdeaProjects\SimpleSwitcher\.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java" afterPath="$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/switcher.xml" afterPath="$PROJECT_DIR$/res/layout/switcher.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleSwitcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SwitcherActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SwitcherActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="22" selection-start="0" selection-end="3333" vertical-scroll-proportion="0.50343645" vertical-offset="149" max-vertical-offset="1343">
+            <state line="81" column="14" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="1343">
               <folding>
                 <element signature="e#923#3321#0" expanded="true" />
                 <element signature="e#3310#3311#0" expanded="true" />
@@ -105,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="switcher.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="switcher.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/switcher.xml">
           <provider editor-type-id="text-editor">
             <state line="19" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1173">
@@ -166,8 +159,8 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/switcher.xml" />
         <option value="$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/switcher.xml" />
       </list>
     </option>
   </component>
@@ -505,12 +498,12 @@
       <updated>1379175113649</updated>
       <workItem from="1379175120556" duration="4673000" />
       <workItem from="1379183396580" duration="912000" />
-      <workItem from="1379184366026" duration="12527000" />
+      <workItem from="1379184366026" duration="13124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18112000" />
+    <option name="totallyTimeSpent" value="18709000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -691,16 +684,26 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="908" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="17" column="27" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="81" column="14" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="1343">
+          <folding>
+            <element signature="e#923#3321#0" expanded="true" />
+            <element signature="e#3310#3311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
@@ -723,16 +726,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/gylka/SimpleSwitcher/SwitcherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="22" selection-start="0" selection-end="3333" vertical-scroll-proportion="0.50343645" vertical-offset="149" max-vertical-offset="1343">
-          <folding>
-            <element signature="e#923#3321#0" expanded="true" />
-            <element signature="e#3310#3311#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>

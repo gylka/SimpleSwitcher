@@ -56,8 +56,8 @@
         android:textStyle="bold"/>
 
     <SurfaceView
-        android:layout_width="320dp"
-        android:layout_height="320dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:id="@+id/surfaceViewCamera"/>
 </LinearLayout>
 
