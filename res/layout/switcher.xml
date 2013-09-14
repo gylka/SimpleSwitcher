@@ -8,39 +8,56 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/flashlight_switcher_label"
-            android:layout_gravity="left|center_vertical" android:id="@+id/txtFlashLightSwitcher"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="left|center_vertical" android:id="@+id/txtFlashLightSwitcher"
+            android:textStyle="bold"
+            android:gravity="center"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_weight="1"/>
+        android:text="@string/turn_on"
+        android:id="@+id/btnFlashlight"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/wifi_switcher_label"
-            android:id="@+id/txtWiFiSwitcher"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtWiFiSwitcher"
+            android:textStyle="bold"
+            android:gravity="center"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_weight="1"/>
+        android:text="@string/turn_on"
+        android:id="@+id/btnWiFi"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/bluetooth_switcher_label"
-        android:id="@+id/txtBluetoothSwitcher"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtBluetoothSwitcher"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_weight="1"/>
+        android:text="@string/turn_on"
+        android:id="@+id/btnBluetooth"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+
+    <SurfaceView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:id="@+id/surfaceViewCamera"/>
 </LinearLayout>
 

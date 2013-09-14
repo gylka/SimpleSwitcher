@@ -4,4 +4,6 @@
     <string name="flashlight_switcher_label">Flashlight Switcher</string>
     <string name="wifi_switcher_label">Wi-Fi Swither</string>
     <string name="bluetooth_switcher_label">Bluetooth Swither</string>
+    <string name="turn_on">Turn On</string>
+    <string name="turn_off">Turn Off</string>
 </resources>
