@@ -1,8 +1,11 @@
 package net.gylka.SimpleSwitcher;
 
 import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -29,9 +32,9 @@ public class SwitcherActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switcher);
 
+        //Flashlight section
         Button btnFlashlight = (Button) findViewById(R.id.btnFlashlight);
         btnFlashlight.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 if( getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
@@ -43,7 +46,6 @@ public class SwitcherActivity extends Activity {
                         mSurfaceViewCamera = (SurfaceView) findViewById(R.id.surfaceViewCamera);
                         mHolder = mSurfaceViewCamera.getHolder();
                         mHolder.addCallback(new SurfaceHolder.Callback() {
-
                             @Override
                             public void surfaceCreated(SurfaceHolder holder) {
                                 try {
@@ -81,5 +83,65 @@ public class SwitcherActivity extends Activity {
             }
         });
 
+        //Wi-Fi section
+        Button btnWiFi = (Button) findViewById(R.id.btnWiFi);
+        if(getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
+            WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+            if (wifiManager.isWifiEnabled()) {
+                btnWiFi.setText(R.string.turn_off);
+            } else {
+                btnWiFi.setText(R.string.turn_on);
+            }
+        } else {
+            btnWiFi.setText(R.string.turn_on);
+        }
+        btnWiFi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
+                    WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+                    if (wifiManager.isWifiEnabled()) {
+                        wifiManager.setWifiEnabled(false);
+                        ((Button)v).setText(R.string.turn_on);
+                    } else {
+                        wifiManager.setWifiEnabled(true);
+                        ((Button)v).setText(R.string.turn_off);
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Your device does not have Wi-Fi", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        //Bluetooth section
+        Button btnBluetooth = (Button) findViewById(R.id.btnBluetooth);
+        if(getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
+            BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            if (bluetoothAdapter.isEnabled()) {
+                btnBluetooth.setText(R.string.turn_off);
+            } else {
+                btnBluetooth.setText(R.string.turn_on);
+            }
+        } else {
+            btnBluetooth.setText(R.string.turn_on);
+        }
+        btnBluetooth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
+                    BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                    if (bluetoothAdapter.isEnabled()) {
+                        bluetoothAdapter.disable();
+                        ((Button)v).setText(R.string.turn_on);
+                    } else {
+                        bluetoothAdapter.enable();
+                        ((Button)v).setText(R.string.turn_off);
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Your device does not have Bluetooth", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
+
 }
